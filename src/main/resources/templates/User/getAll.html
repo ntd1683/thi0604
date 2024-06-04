@@ -35,7 +35,7 @@
             <td th:text="${user.firstName}"></td>
             <td th:text="${user.lastName}"></td>
             <td th:text="${user.birthday}"></td>
-            <td th:text="${user.isDeleted}"></td>
+            <td class="text-danger" th:text="${user.isDeleted}"></td>
             <td th:text="${user.role.getName()}"></td>
             <td>
                 <a th:href="@{/users/edit/{id}(id=${user.id})}" class="btn
